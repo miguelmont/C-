@@ -34,11 +34,10 @@ void Tiempo::mostrarhora(){
 }
 
 int main(){
-	Tiempo *hora_actual, *hora_pasada;
-	hora_actual = new Tiempo(12,55,16);
-	hora_pasada = new Tiempo(65675);
-	hora_actual->mostrarhora();
-	hora_pasada->mostrarhora();
+	Tiempo hora_actual (12,55,16);;
+	Tiempo hora_pasada(65675);
+	hora_actual.mostrarhora();
+	hora_pasada.mostrarhora();
 	system ("pause");
 	return 0;
 	
